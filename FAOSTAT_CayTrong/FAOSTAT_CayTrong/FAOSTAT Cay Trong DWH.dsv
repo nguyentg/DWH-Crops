@@ -1,0 +1,147 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="071115ca-6679-47a6-bdd2-25666e3f0a4f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>FAOSTAT Cay Trong DWH</ID>
+  <Name>FAOSTAT Cay Trong DWH</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>FAOSTAT Cay Trong DWH</DataSourceID>
+  <Schema>
+    <xs:schema id="FAOSTAT_x0020_Cay_x0020_Trong_x0020_DWH" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="FAOSTAT_x0020_Cay_x0020_Trong_x0020_DWH" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="fad1b073-ed2e-4e2b-ae8a-c01ca854017a">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_FactThongKe" msprop:design-time-name="77554395-3339-4ca0-86d3-232ce94d16a2" msprop:DbTableName="FactThongKe" msprop:FriendlyName="FactThongKe" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="item_code" msprop:design-time-name="a2cfcd24-e6df-4780-a8fc-08a56153e5e6" msprop:DbColumnName="item_code" msprop:FriendlyName="item_code" type="xs:int" minOccurs="0" />
+                  <xs:element name="element_code" msprop:design-time-name="5a22abb3-9646-4b71-a2f9-5ae7b9e03228" msprop:DbColumnName="element_code" msprop:FriendlyName="element_code" type="xs:int" minOccurs="0" />
+                  <xs:element name="country_code" msprop:design-time-name="5588a304-98f8-473d-9e52-a9ea0a0f9416" msprop:DbColumnName="country_code" msprop:FriendlyName="country_code" type="xs:int" minOccurs="0" />
+                  <xs:element name="Ycode" msprop:design-time-name="a20e0d19-6c1c-40d5-9d7a-95b6fd5a9fa3" msprop:DbColumnName="Ycode" msprop:FriendlyName="Ycode" type="xs:int" minOccurs="0" />
+                  <xs:element name="SanLuong" msprop:design-time-name="8b8d7469-6dc6-4b7c-880f-1c4b36900dd6" msprop:DbColumnName="SanLuong" msprop:FriendlyName="SanLuong" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimElement" msprop:design-time-name="6c061fe6-bfd8-4380-b728-2b3c13322660" msprop:DbTableName="DimElement" msprop:FriendlyName="DimElement" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="element_code" msprop:design-time-name="573dfbe1-9b8d-468d-8022-4de6863cc63d" msprop:DbColumnName="element_code" msprop:FriendlyName="element_code" type="xs:int" />
+                  <xs:element name="element_name" msprop:design-time-name="264f127b-ee74-4be1-bd7e-f7198b13655f" msprop:DbColumnName="element_name" msprop:FriendlyName="element_name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimCountry" msprop:design-time-name="07825569-edbe-4513-8d12-fcf56dc2de64" msprop:DbTableName="DimCountry" msprop:FriendlyName="DimCountry" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="country_code" msprop:design-time-name="009b5486-d463-4174-ac9b-6ae91638e859" msprop:DbColumnName="country_code" msprop:FriendlyName="country_code" type="xs:int" />
+                  <xs:element name="country_name" msprop:design-time-name="6b7e7b8f-5ca7-46b2-9d79-f9f3744518cc" msprop:DbColumnName="country_name" msprop:FriendlyName="country_name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="70" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimYear" msprop:design-time-name="74339e4a-516b-4664-a3a3-beed1426db8f" msprop:DbTableName="DimYear" msprop:FriendlyName="DimYear" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Ycode" msprop:design-time-name="30723c90-2746-4222-a52c-9e1a760720fa" msprop:DbColumnName="Ycode" msprop:FriendlyName="Ycode" type="xs:int" />
+                  <xs:element name="TongSanLuongNam" msprop:design-time-name="945c08fb-a7df-4922-84dc-8aef8964f2fa" msprop:DbColumnName="TongSanLuongNam" msprop:FriendlyName="TongSanLuongNam" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimItem" msprop:design-time-name="6470e72e-32ce-41c2-a8d1-9b3df058f705" msprop:DbTableName="DimItem" msprop:FriendlyName="DimItem" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="item_code" msprop:design-time-name="fa71908b-6d1b-4011-984a-595e066f692c" msprop:DbColumnName="item_code" msprop:FriendlyName="item_code" type="xs:int" />
+                  <xs:element name="item_name" msprop:design-time-name="5d95cdae-74f1-46ac-b0f8-194b64dd86a7" msprop:DbColumnName="item_name" msprop:FriendlyName="item_name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimElement" />
+          <xs:field xpath="element_code" />
+        </xs:unique>
+        <xs:unique name="dbo_DimCountry_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimCountry" />
+          <xs:field xpath="country_code" />
+        </xs:unique>
+        <xs:unique name="dbo_DimYear_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimYear" />
+          <xs:field xpath="Ycode" />
+        </xs:unique>
+        <xs:unique name="dbo_DimItem_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimItem" />
+          <xs:field xpath="item_code" />
+        </xs:unique>
+        <xs:keyref name="FK__FactThong__item___4222D4EF" refer="dbo_DimItem_Constraint1">
+          <xs:selector xpath=".//dbo_FactThongKe" />
+          <xs:field xpath="item_code" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactThong__Ycode__44FF419A" refer="dbo_DimYear_Constraint1">
+          <xs:selector xpath=".//dbo_FactThongKe" />
+          <xs:field xpath="Ycode" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactThong__eleme__4316F928" refer="Constraint1">
+          <xs:selector xpath=".//dbo_FactThongKe" />
+          <xs:field xpath="element_code" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactThong__count__440B1D61" refer="dbo_DimCountry_Constraint1">
+          <xs:selector xpath=".//dbo_FactThongKe" />
+          <xs:field xpath="country_code" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <FAOSTAT_x0020_Cay_x0020_Trong_x0020_DWH xmlns="" />
+  </Schema>
+</DataSourceView>
